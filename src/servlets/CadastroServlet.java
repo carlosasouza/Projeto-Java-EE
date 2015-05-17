@@ -8,11 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import dao.ClienteDao;
-import dao.FuncionarioDao;
 import model.Cliente;
 import model.Endereco;
-import model.Funcionario;
+import dao.ClienteDao;
 
 /**
  * Servlet de cadastro de clientes
@@ -74,8 +72,8 @@ public class CadastroServlet extends HttpServlet {
 //		cadastro de funcionário.
 		else if(request.getParameter("cadastro").equalsIgnoreCase("funcionario")){
 			
-			Funcionario funcionario = new Funcionario();
-			FuncionarioDao FuncionarioDao = new FuncionarioDao();
+			//Funcionario funcionario = new Funcionario();
+			//FuncionarioDao FuncionarioDao = new FuncionarioDao();
 			
 		}
 	}

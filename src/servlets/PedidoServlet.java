@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import model.Bebida;
 import model.Cliente;
-import model.Funcionario;
 import model.Pedido;
 import model.Pizza;
 import dao.PedidoDao;
@@ -50,12 +49,12 @@ public class PedidoServlet extends HttpServlet {
 			}
 	}
 	
-	private List<Pedido> doListagemPedidoFuncionario(HttpServletRequest request, HttpServletResponse response){
-		
-		Funcionario funcionario = (Funcionario) request.getSession().getAttribute("funcionario");
-		
-		return null;
-	}
+//	private List<Pedido> doListagemPedidoFuncionario(HttpServletRequest request, HttpServletResponse response){
+//		
+//		Funcionario funcionario = (Funcionario) request.getSession().getAttribute("funcionario");
+//		
+//		return null;
+//	}
 	
 //	metodo que executa o cadastro de um pedido.
 	@SuppressWarnings("unchecked")
