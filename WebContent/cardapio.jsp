@@ -47,12 +47,13 @@
 			<tr>
 				<td><center><b>Nome</b><center></td>
 				<td><center><b>Preço</b><center></td>
-			</tr>
 			<%
 // 			Iteração da lista de bebidas do cardapio e exibição na página jsp.
 				for (Bebida bebida : listaBebidas) {
+					out.println("<tr>");
 					out.println("<td>" + bebida.getNome() + "</td>");
 					out.println("<td>" + new DecimalFormat("#,###.00").format(bebida.getPreco()) + "</td>");
+					out.println("</tr>");
 				}
 			%>
 			<tr>

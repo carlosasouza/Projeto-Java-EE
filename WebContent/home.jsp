@@ -2,7 +2,7 @@
 <%@ page import="model.Cliente"%>
 <%
 //Instancia do cliente e recuperação do objeto da sessão.
-	Cliente cliente = (Cliente) session.getAttribute("cliente");
+	final Cliente cliente = (Cliente) session.getAttribute("cliente");
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
